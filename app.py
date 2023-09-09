@@ -9,7 +9,7 @@ description = """
 <p>
 <center>
 This app converts transliterated arabic text to Arabic using BuckWater Scheme. Use the following image to familiarize yourself with the conversion system.
-<img src="https://huggingface.co/spaces/FDSRashid/Camel_tools_Test/blob/main/Buckwalter-transliteration-for-Arabic-language.jpg" alt="Test" width="200"/>
+<img src="https://huggingface.co/spaces/FDSRashid/Camel_tools_Test/resolve/main/Buckwalter-transliteration-for-Arabic-language.jpg" alt="Test" >
 </center>
 </p>
 """
