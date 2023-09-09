@@ -1,2 +1,2 @@
 cmake
-libboost-dev
+libboost-all-dev
