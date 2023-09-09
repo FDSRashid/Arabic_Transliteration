@@ -1,9 +1,11 @@
 from camel_tools.utils.charmap import CharMapper
-
+import os
 import gradio as gr
+from huggingface_hub import login
 ar2bw = CharMapper.builtin_mapper('ar2bw')
 bw2ar = CharMapper.builtin_mapper('bw2ar')
-
+Secret_token = os.getenv('token')
+login(token = Secret_token)
 title = """#Transliterate using BuckWater Scheme"""
 description = """
 This app converts transliterated arabic text to Arabic using BuckWater Scheme. Use the following image to familiarize yourself with the conversion system.
