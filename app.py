@@ -7,7 +7,6 @@ bw2ar = CharMapper.builtin_mapper('bw2ar')
 title = """#Transliterate using BuckWater Scheme"""
 description = """
 This app converts transliterated arabic text to Arabic using BuckWater Scheme. Use the following image to familiarize yourself with the conversion system.
-![](https://huggingface.co/spaces/FDSRashid/Camel_tools_Test/resolve/main/Buckwalter-transliteration-for-Arabic-language.jpg)
 """
 example = [["*hbt <lY Almktbp."]]
 
@@ -17,6 +16,7 @@ def getArabic(transliteration):
 with gr.Blocks() as demo:
     gr.Markdown(title)
     gr.Markdown(description)
+    gr.Image('https://huggingface.co/spaces/FDSRashid/Camel_tools_Test/resolve/main/Buckwalter-transliteration-for-Arabic-language.jpg')
     name = gr.Textbox(label="English Transliteration (Using Buckwater System )")
     output = gr.Textbox(label="Arabic Form of Text")
     greet_btn = gr.Button("Get Arabic")
