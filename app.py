@@ -16,7 +16,7 @@ def getArabic(transliteration):
 
 with gr.Blocks() as demo:
     gr.Markdown(title)
-    gr.HTML(description)
+    gr.Markdown(description)
     name = gr.Textbox(label="English Transliteration (Using Buckwater System )")
     output = gr.Textbox(label="Arabic Form of Text")
     greet_btn = gr.Button("Get Arabic")
