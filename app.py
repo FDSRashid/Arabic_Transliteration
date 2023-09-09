@@ -4,7 +4,7 @@ import gradio as gr
 ar2bw = CharMapper.builtin_mapper('ar2bw')
 bw2ar = CharMapper.builtin_mapper('bw2ar')
 
-title = "Transliterate using BuckWater Scheme"
+title = """#Transliterate using BuckWater Scheme"""
 description = """
 <p>
 <center>
@@ -19,6 +19,8 @@ def getArabic(transliteration):
   return bw2ar(transliteration)
 
 with gr.Blocks() as demo:
+    gr.Markdown(title)
+    gr.HTML(description)
     name = gr.Textbox(label="English Transliteration (Using Buckwater System )")
     output = gr.Textbox(label="Arabic Form of Text")
     greet_btn = gr.Button("Get Arabic")
